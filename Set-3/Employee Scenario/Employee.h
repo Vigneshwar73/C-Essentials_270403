@@ -11,6 +11,7 @@ class Employee:public IEmployee
   public:
   Employee(std::string id, std::string name, double salary,int exp);
   virtual void display();
+  double getSalary();
 };
 
 #endif // EMPLOYEE_H

@@ -14,13 +14,16 @@ Manager::Manager(std::string id, std::string name,double salary,int exp,int code
 
 void Manager::payroll()
 {
+    double m_salary = Employee::getSalary();
     std::cout<<"Salary: "<<m_salary<<std::endl;
 
 }
 
 void Manager::appraisal()
 {
-    m_salary = m_salary+(m_salary*10/100)
+    double m_salary = Employee::getSalary();
+    m_salary = m_salary+(m_salary*10/100);
+    std::cout<<"Appraisal: "<<m_salary<<std::endl;
 }
 
 void Manager::display()

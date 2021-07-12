@@ -12,12 +12,15 @@ Engineer::Engineer(std::string id, std::string name, double salary, int exp, int
 
 void Engineer::payroll()
 {
+    double m_salary = Employee::getSalary();
     std::cout<<"Salary: "<<m_salary<<std::endl;
 }
 
 void Engineer::appraisal()
 {
+    double m_salary = Employee::getSalary();
     m_salary = m_salary+(m_salary*5/100);
+    std::cout<<"Appraisal: "<<m_salary<<std::endl;
 }
 
 void Engineer::display()

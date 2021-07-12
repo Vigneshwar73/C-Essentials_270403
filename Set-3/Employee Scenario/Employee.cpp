@@ -11,6 +11,11 @@ Employee::Employee(std::string id, std::string name, double salary, int exp)
 
 }
 
+double Employee::getSalary()
+{
+    return m_salary;
+}
+
 virtual void Employee::display()
 {
     std::cout<<"Employee ID: "<<m_empid<<std::endl;
